@@ -51,4 +51,24 @@ authRouter.get("/getme",async(req,res)=>{
     })
 })
 
+
+
+authRouter.post("/login",async(req,res)=>{
+    const {name,email}=req.body
+
+    const user=await userModel.findOne({email})
+    if(user)
+    {
+        res.json({
+            email:user.email,
+            name:user.name,
+            password:user.password
+        })
+    }
+    else{
+        res.status(401).json({
+            message:"User Not registered"
+        })
+    }
+})
 module.exports=authRouter
