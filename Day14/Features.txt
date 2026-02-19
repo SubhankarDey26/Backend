@@ -1,0 +1,15 @@
+==>Authentication
+    =>register(1.User ka data save karna 2.token user ko dena)
+    =>login
+    =>logout(token blacklisting)
+    =>[Otp based registration]
+
+==>Post
+    =>create
+    =>can see the feed
+    =>like Post (collection types)
+    =>save Post
+
+==>User
+    =>follow
+    =>following
