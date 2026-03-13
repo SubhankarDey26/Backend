@@ -1,0 +1,16 @@
+==>Authentication
+    ==>Register
+    ==>Login
+    ==>Logout (Token Blacklisting)
+    ==>(OTP based Registration)
+
+==>Post
+    ==>Create
+    ==>Can see the Feed
+    ==>Like Posts(Colletion Types)
+    =>Save Posts
+
+=>Users 
+    ==>Followers
+    ==>Following
+    
