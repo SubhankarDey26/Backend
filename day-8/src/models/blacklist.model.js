@@ -1,0 +1,19 @@
+const mongoose =require("mongoose")
+
+
+const blacklistSchema =new mongoose.Schema({
+
+    token:{
+        type:String,
+        required:[true,"token is reuired for blacklisting"]
+    }
+
+},{
+    timestamps:true
+})
+
+
+
+const blacklisModel=mongoose.model("blacklist",blacklistSchema)
+
+module.exports=blacklisModel
